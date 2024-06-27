@@ -19,7 +19,7 @@ public interface I1 {
     }
 
     static boolean isNull(String str) {
-        System.out.println("I1's Null Check");
+        System.out.println("I1's Null Check for - " + str);
 
         return str == null || (str.isEmpty());
     }

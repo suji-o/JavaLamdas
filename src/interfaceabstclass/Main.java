@@ -10,8 +10,9 @@ public class Main {
 
         I1 i1  = new C1();
         i1.method1();
-        i1.log("Interf  ace I1 this is overridden by implementation in c1 for default method");
+        i1.log("Interface I1 this is overridden by implementation in c1 for default method");
         I1.logStatic("Suji");
+        System.out.println();
 
         /*I2 i2 = new I2() {
             @Override
@@ -21,7 +22,7 @@ public class Main {
         };*/
 
         //above is equal to
-        I2 i2 = () -> System.out.println("I am getting printed from I2's method2");
+        I2 i2 = () -> System.out.println("I am getting printed from main overridden-method2");
 
         i2.method2();
         i2.method3();
